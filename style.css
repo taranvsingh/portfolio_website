@@ -1,0 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+button {
+    all: unset; /* Resets all inherited styles */
+    display: inline-block; /* Ensures button behaves like an inline-block element */
+    cursor: pointer; /* Makes sure it has the pointer cursor */
+}
+
+a {
+    all: unset; /* Resets all inherited styles */
+    display: inline-block; /* Allows padding and margin */
+    cursor: pointer; /* Changes cursor to pointer */
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits the text color from its parent */
+}
+
+/* Primary #27374D */
+/* secondary 526D82 */
+/* bg #DDE6ED */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #DDE6ED;
+    color: #27374D;
+
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    position: sticky;
+    top: 0;
+    background-color: #DDE6ED;
+}
+
+.user {
+    width: 50%;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.intro {
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+}
+
+.user__name, .nav-link {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.intro__text{
+    font-family: "Playwrite GB S", cursive;
+    color: #526D82;
+}
+
+.intro__text span, .my-bio span {
+    color: #27374D;
+}
+
+.work-section {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30vh 0;
+}
+
+.work__item-list, .work-list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.work-list {
+    gap: 40px;
+    width: 100%;
+}
+
+.work__item h3{
+    font-family: "Playwrite GB S", cursive;
+    font-size: 30px;
+}
+
+.work__exp {
+    padding-top: 20px;
+}
+.work__exp h4 {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #27374D;
+    color: #DDE6ED;
+    font-size: 15px;
+    padding: 5px;
+
+    cursor: pointer;
+}
+
+.work__exp p { 
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #27374D;
+    padding: 5px;
+}
+
+.work__exp p span {
+    font-weight: bold;
+}
+
+.about-section {
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-bio {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-bio__title span {
+    color: #27374D;
+}
+
+.my-bio p {
+    font-size: 30px;
+    color: #526D82;
+    font-family: "Playwrite GB S", cursive;
+}
+
+.contact-section {
+    margin: 60px 0;
+}
+.contact-section p {
+    font-size: 30px;
+    font-family: "Playwrite GB S", cursive;
+}
+
+.contact-section a{
+    color: #526D82;
+}
+
+.work__exp .work__exp-link {
+    cursor: default;
+    color: transparent;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.work__exp:hover .work__exp-link {
+    color: #526D82;
+    cursor: pointer;
+    display: inline-block;
+}
